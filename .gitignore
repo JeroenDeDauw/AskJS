@@ -2,6 +2,7 @@
 
 !.gitignore
 !.idea
+!.travis.yml
 
 *~
 *.kate-swp
