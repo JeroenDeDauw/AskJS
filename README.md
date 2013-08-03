@@ -6,6 +6,8 @@ JavaScript implementation of the Ask query language.
 
 ## Building the project
 
-Assumes presence of Node.js
+Assumes presence of Node.js and npm.
 
-Run ./jake to build
+When not already done so, install the dependencies with: npm install
+
+To run the build, execute: ./jake

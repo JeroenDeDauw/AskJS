@@ -1,0 +1,32 @@
+{
+	"name": "ask-js",
+	"description": "JavaScript implementation of the Ask query language.",
+	"author": "Jeroen De Dauw <jeroendedauw@gmail.com>",
+
+	"version": "0.0.1",
+
+	"homepage": "https://github.com/JeroenDeDauw/AskJS",
+	"bugs": "https://github.com/JeroenDeDauw/AskJS/issues",
+
+	"keywords": [
+		"ask",
+		"Wikidata",
+		"Semantic MediaWiki",
+		"Wikibase"
+	],
+
+	"licenses": [{
+		"type": "GPL",
+		"url": "https://github.com/JeroenDeDauw/AskJS/blob/master/COPYING"
+	}],
+
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/JeroenDeDauw/AskJS.git"
+	},
+
+	"dependencies": {
+		"jake": "~0.6",
+		"jshint": "2.x"
+	}
+}
