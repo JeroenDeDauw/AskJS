@@ -1,7 +1,12 @@
-/* global desc, task, jake, fail, complete */
+/* global desc, task, jake, fail, complete, directory*/
 
-"use strict";
+(function() {
+	"use strict";
 
-task('example', function() {
-	console.log('Example');
-});
+	task('default', ['lint']);
+
+	task('lint', function() {
+		var lint = require('./build/lint/lint_runner.js');
+		lint.validateFile('Jakefile');
+	});
+}());
