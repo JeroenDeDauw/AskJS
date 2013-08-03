@@ -1,0 +1,9 @@
+.*
+
+!.gitignore
+!.idea
+
+*~
+*.kate-swp
+
+.idea/workspace.xml
