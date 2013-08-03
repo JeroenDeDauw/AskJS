@@ -6,4 +6,7 @@ node_js:
 
 before_install:
   - npm install
-  - npm install istanbul coveralls
+  - npm install coveralls
+
+after_script:
+  - ./node_modules/.bin/coveralls --verbose
