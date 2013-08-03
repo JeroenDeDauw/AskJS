@@ -3,6 +3,7 @@
 (function() {
 	"use strict";
 
+	desc('Build and test');
 	task('default', ['lint']);
 
 	desc('Run jslint on all the JavaScript files');
@@ -19,5 +20,10 @@
 		};
 
 		lint.validateFileList(files.toArray(), options);
+	});
+
+	desc('Run full integration');
+	task('integrate', ['default'], function() {
+		// TODO
 	});
 }());
