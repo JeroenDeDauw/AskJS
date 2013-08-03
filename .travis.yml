@@ -8,4 +8,3 @@ before_install:
   - npm install
   - npm install istanbul coveralls
 
-script: ./jake
