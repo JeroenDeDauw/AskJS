@@ -5,5 +5,7 @@
 
 *~
 *.kate-swp
+*.swp
 
 .idea/workspace.xml
+node_modules
