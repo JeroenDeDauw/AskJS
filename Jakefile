@@ -7,6 +7,16 @@
 
 	task('lint', function() {
 		var lint = require('./build/lint/lint_runner.js');
-		lint.validateFile('Jakefile');
+
+		var files = new jake.FileList();
+		files.include('Jakefile');
+		files.include('**/*.js');
+		files.exclude('node_modules');
+
+		var options = {
+			node: true
+		};
+
+		lint.validateFileList(files.toArray(), options);
 	});
 }());
