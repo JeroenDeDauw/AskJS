@@ -1,4 +1,4 @@
-/* global desc, task, jake, fail, complete, directory*/
+/*global desc, task, jake, fail, complete, directory*/
 
 (function() {
 	"use strict";
