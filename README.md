@@ -12,3 +12,5 @@ Assumes presence of Node.js and npm.
 When not already done so, install the dependencies with: npm install
 
 To run the build, execute: ./jake
+
+You might need to make the jake file executable first. On unix: chmod +x jake
