@@ -9,6 +9,6 @@ exports.testCanConstructQuery = function(test) {
 
 exports.testGetLimit = function(test) {
 	var query = new ask.Query();
-	test.equal(query.getLimit(), 42, 'dummy test');
+	test.equal(query.getLimit(), 42, 'getLimit returns the correct value');
 	test.done();
 };
