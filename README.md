@@ -7,7 +7,8 @@ JavaScript implementation of the Ask query language.
 
 ## Building the project
 
-Assumes presence of Node.js and npm.
+Assumes presence of [Node.js](http://nodejs.org/)
+and [npm](https://npmjs.org/).
 
 When not already done so, install the dependencies with: npm install
 
