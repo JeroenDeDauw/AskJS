@@ -15,3 +15,8 @@ When not already done so, install the dependencies with: npm install
 To run the build, execute: ./jake
 
 You might need to make the jake file executable first. On unix: chmod +x jake
+
+## Links
+
+* [AskJS on Ohloh](https://www.ohloh.net/p/AskJ)
+* [PHP implementation of Ask](https://github.com/wikimedia/mediawiki-extensions-Ask)
