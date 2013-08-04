@@ -1,12 +1,14 @@
 {
 	"name": "ask-js",
 	"description": "JavaScript implementation of the Ask query language.",
-	"author": "Jeroen De Dauw <jeroendedauw@gmail.com>",
 
 	"version": "0.0.1",
 
 	"homepage": "https://github.com/JeroenDeDauw/AskJS",
 	"bugs": "https://github.com/JeroenDeDauw/AskJS/issues",
+
+	"author": "Jeroen De Dauw",
+	"maintainers": ["Jeroen De Dauw <jeroendedauw@gmail.com> (http://bn2vs.com)"],
 
 	"keywords": [
 		"ask",
