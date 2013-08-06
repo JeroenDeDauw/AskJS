@@ -35,7 +35,10 @@
 		"jscoverage": "*"
 	},
 
+	"main": "index.js",
+
 	"scripts": {
-		"test": "./jake integrate"
+		"test": "./jake integrate",
+		"coveralls": "jscoverage lib && AskJS_COV=1 nodeunit --reporter=lcov test | coveralls"
 	}
 }

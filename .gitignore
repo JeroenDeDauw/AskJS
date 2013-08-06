@@ -8,6 +8,8 @@
 *.kate-swp
 *.swp
 
-.idea/workspace.xml
 node_modules
+lib-cov
+
+.idea/workspace.xml
 npm-debug.log

@@ -1,0 +1,1 @@
+module.exports = process.env.AskJS_COV ? require('./lib-cov/Query') : require('./lib/Query');
