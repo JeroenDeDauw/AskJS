@@ -12,7 +12,7 @@
 
 		var files = new jake.FileList();
 		files.include('Jakefile');
-		files.include('**/*.js');
+		files.include('lib/**/*.js');
 		files.exclude('node_modules');
 
 		var options = {

@@ -1,6 +1,6 @@
 "use strict";
 
-var ask = require('./../src/Query.js');
+var ask = require('../');
 
 exports.testCanConstructQuery = function(test) {
 	var query = new ask.Query();
