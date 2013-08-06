@@ -18,5 +18,6 @@ You might need to make the jake file executable first. On unix: chmod +x jake
 
 ## Links
 
-* [AskJS on Ohloh](https://www.ohloh.net/p/AskJ)
+* [AskJS on npm](https://npmjs.org/package/ask-js)
+* [AskJS on Ohloh](https://www.ohloh.net/p/AskJS)
 * [PHP implementation of Ask](https://github.com/wikimedia/mediawiki-extensions-Ask)
