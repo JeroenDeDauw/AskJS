@@ -2,6 +2,7 @@
 
 [![Build Status](https://secure.travis-ci.org/JeroenDeDauw/AskJS.png?branch=master)](http://travis-ci.org/JeroenDeDauw/AskJS)
 [![Coverage Status](https://coveralls.io/repos/JeroenDeDauw/AskJS/badge.png?branch=master)](https://coveralls.io/r/JeroenDeDauw/AskJS?branch=master)
+[![Dependency Status](https://gemnasium.com/JeroenDeDauw/AskJS.png)](https://gemnasium.com/JeroenDeDauw/AskJS)
 
 JavaScript implementation of the Ask query language.
 
