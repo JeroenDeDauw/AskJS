@@ -43,7 +43,7 @@
 				}
 			);
 		},
-		{}
+		{async:true}
 	);
 
 	desc('Run full integration');
