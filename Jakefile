@@ -20,14 +20,31 @@
 			strict: true
 		};
 
-		lint.validateFileList(files.toArray(), options);
+		var lintPassed = lint.validateFileList(files.toArray(), options);
+
+		if (!lintPassed) {
+			fail('Linting failed');
+		}
 	});
 
 	desc('Run all the tests');
-	task('test', function() {
-		var reporter = require('nodeunit' ).reporters['default'];
-		reporter.run(['test']);
-	});
+	task('test',
+		[],
+		function() {
+			var reporter = require('nodeunit').reporters['default'];
+			reporter.run(
+				['test'],
+				null,
+				function(failures) {
+					if (failures) {
+						fail('Tests failed');
+					}
+					complete();
+				}
+			);
+		},
+		{}
+	);
 
 	desc('Run full integration');
 	task('integrate', ['default'], function() {
