@@ -33,7 +33,7 @@
 		function() {
 			var reporter = require('nodeunit').reporters['default'];
 			reporter.run(
-				['test'],
+				['test/language'],
 				null,
 				function(failures) {
 					if (failures) {
