@@ -3,7 +3,7 @@
 var ask = require('../../');
 
 exports.testCanConstructQuery = function( test ) {
-	var query = new ask.Language.Query();
+	var query = new ask.language.Query();
 	test.done();
 };
 
