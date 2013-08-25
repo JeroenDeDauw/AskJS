@@ -4,28 +4,39 @@
 	"use strict";
 
 	desc('Build and test');
-	task('default', ['lint', 'test']);
+	task('default', ['node', 'lint', 'test']);
+
+	// Ensure the correct version of Node is present.
+	task('node', function() {
+		var REQUIRED_NODE_VERSION = '0.10';
+
+		// TODO
+	});
 
 	desc('Run jslint on all the JavaScript files');
-	task('lint', function() {
-		var lint = require('./build/lint/lint_runner.js');
+	task(
+		'lint',
+		[],
+		function() {
+			var lint = require('./build/lint/lint_runner.js');
 
-		var files = new jake.FileList();
-		files.include('Jakefile');
-		files.include('lib/**/*.js');
-		files.exclude('node_modules');
+			var files = new jake.FileList();
+			files.include('Jakefile');
+			files.include('lib/**/*.js');
+			files.exclude('node_modules');
 
-		var options = {
-			node: true,
-			strict: true
-		};
+			var options = {
+				node: true,
+				strict: true
+			};
 
-		var lintPassed = lint.validateFileList(files.toArray(), options);
+			var lintPassed = lint.validateFileList(files.toArray(), options);
 
-		if (!lintPassed) {
-			fail('Linting failed');
+			if (!lintPassed) {
+				fail('Linting failed');
+			}
 		}
-	});
+	);
 
 	desc('Run all the tests');
 	task('test',
