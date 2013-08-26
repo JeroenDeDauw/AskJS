@@ -2,6 +2,14 @@
   <dictionary name="j">
     <words>
       <w>async</w>
+      <w>dauw</w>
+      <w>jeroen</w>
+      <w>jscoverage</w>
+      <w>jshint</w>
+      <w>nodeunit</w>
+      <w>ohloh</w>
+      <w>wikibase</w>
+      <w>wikidata</w>
     </words>
   </dictionary>
 </component>
