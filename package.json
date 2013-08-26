@@ -17,10 +17,12 @@
 		"Wikibase"
 	],
 
-	"licenses": [{
-		"type": "GPL",
-		"url": "https://github.com/JeroenDeDauw/AskJS/blob/master/COPYING"
-	}],
+	"licenses": [
+		{
+			"type": "MPL v2+",
+			"url": "https://github.com/JeroenDeDauw/AskJS/blob/master/COPYING"
+		}
+	],
 
 	"repository": {
 		"type": "git",

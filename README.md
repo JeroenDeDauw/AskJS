@@ -19,6 +19,14 @@ You might need to make the jake file executable first. On unix: chmod +x jake
 
 To list all build options, run "./jake -T"
 
+## License
+
+Copyright (c) 2013, Jeroen De Dauw
+All rights reserved.
+
+All files in this package are licensed under the MPL 2.0 or later.
+See COPYING for the definition of the MPL 2.0.
+
 ## Links
 
 * [AskJS on npm](https://npmjs.org/package/ask-js)
