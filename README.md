@@ -14,11 +14,9 @@ and [npm](https://npmjs.org/).
 
 When not already done so, install the dependencies with: npm install
 
-To run the build, execute "./jake" or "npm test".
+To run the build, execute "sh jake" or "npm test".
 
-You might need to make the jake file executable first. On unix: chmod +x jake
-
-To list all build options, run "./jake -T"
+To list all build options, run "sh jake -T"
 
 ## License
 
