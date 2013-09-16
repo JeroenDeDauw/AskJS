@@ -42,17 +42,29 @@
 	task('test',
 		[],
 		function() {
-			var reporter = require('nodeunit').reporters['default'];
-			reporter.run(
-				['test/language'],
-				null,
-				function(failures) {
-					if (failures) {
-						fail('Tests failed');
+			var walk = require("walk");
+
+			var walker  = walk.walk('./test', { followLinks: false });
+			var testFiles = [];
+
+			walker.on('file', function(root, stat, next) {
+				testFiles.push(root + '/' + stat.name);
+				next();
+			});
+
+			walker.on('end', function() {
+				var reporter = require('nodeunit').reporters['default'];
+				reporter.run(
+					testFiles,
+					null,
+					function(failures) {
+						if (failures) {
+							fail('Tests failed');
+						}
+						complete();
 					}
-					complete();
-				}
-			);
+				);
+			});
 		},
 		{async:true}
 	);

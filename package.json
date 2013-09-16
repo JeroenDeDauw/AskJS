@@ -34,7 +34,8 @@
 		"jshint": "2.x",
 		"nodeunit": "~0.8.1",
 		"coveralls": "2.x",
-		"jscoverage": "*"
+		"jscoverage": "*",
+		"walk": "*"
 	},
 
 	"main": "index.js",
